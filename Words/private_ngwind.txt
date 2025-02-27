@@ -2,4 +2,4 @@
 (?<=\[Up to 21°C\].*?)香格里拉・开拓异境～粪作猎手挑战神作～ 第二季 => ShangriLa.Frontier.S01
 (?<=\[Up to 21°C\].*?)Shangri-La Frontier 2nd Season => ShangriLa.Frontier.S01
 (?<=\[Up to 21°C\].*?)Shangri-La Frontier - Kusoge Hunter, Kamige ni Idoman to su 2nd Season => ShangriLa.Frontier.S01
-Shangri La Frontier 2024 S02 => ShangriLa.Frontier.2024.S01 && S02 <> 1080p >> EP+25
+Shangri La Frontier 2024 S02 => ShangriLa.Frontier.2024.S01 && S01 <> 1080p >> EP+25
