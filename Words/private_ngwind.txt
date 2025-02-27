@@ -1,4 +1,4 @@
 #香格里拉边境第二季
 (?<=\[Up to 21°C\].*?)香格里拉・开拓异境～粪作猎手挑战神作～ 第二季 => ShangriLa.Frontier.S01
 (?<=\[Up to 21°C\].*?)Shangri-La Frontier 2nd Season => ShangriLa.Frontier.S01
-(?<=\[Up to 21°C\].*?)Kusoge Hunter, Kamige ni Idoman to su 2nd Season => ShangriLa.Frontier.S01
+(?<=\[Up to 21°C\].*?)Shangri-La Frontier - Kusoge Hunter, Kamige ni Idoman to su 2nd Season => ShangriLa.Frontier.S01
