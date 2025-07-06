@@ -15,4 +15,4 @@ Solo Leveling S02 => Solo.Leveling.S01 && S01 <> 1080p friDay >> EP+12
 Solo.Leveling.S02 => Solo.Leveling.S01 && S01 <> 1080p.friDay >> EP+12
 
 # 胆大党第二季
-DAN.DA.DAN.2025.S02 => DAN.DA.DAN.2025.S01 && S01 <> .CR >> EP+12
+DAN.DA.DAN.2025.S02 => DAN.DA.DAN.2025.S01 && S01 <> 1080p >> EP+12
