@@ -13,11 +13,12 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          
-      - name: Sync upstream changes
-        uses: repo-sync/push-action@v1
-        with:
-          source_repo: "Putarku/MoviePilot-Help"  # 替换为原项目的作者和仓库名
-          source_branch: "main"           # 原项目的分支名
-          destination_branch: "main"      # 你 fork 仓库的分支名
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+  
+      - name: Sync with upstream
+        run: |
+          git remote add upstream https://github.com/Putarku/MoviePilot-Help.git
+          git fetch upstream
+          git checkout main
+          git merge upstream/main --allow-unrelated-histories --no-edit
+          git push origin main
+        shell: bash
