@@ -1,0 +1,21 @@
+name: Sync Upstream
+
+on:
+  schedule:
+    - cron: "0 * * * *"  # 每小时同步一次
+  workflow_dispatch: # 允许手动触发
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/upstream-sync@v1
+        with:
+          upstream_repo: Putarku/MoviePilot-Help
+          upstream_branch: main
+          target_branch: main
+          # 如果需要处理冲突，可以设置 force 为 true，但请谨慎使用
+          # force: false
