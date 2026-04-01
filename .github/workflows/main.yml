@@ -9,13 +9,15 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: actions/upstream-sync@v1
+          
+      - name: Sync upstream changes
+        uses: repo-sync/push-action@v1
         with:
-          upstream_repo: Putarku/MoviePilot-Help
-          upstream_branch: main
-          target_branch: main
-          # 如果需要处理冲突，可以设置 force 为 true，但请谨慎使用
-          # force: false
+          source_repo: "Putarku/MoviePilot-Help"  # 替换为原项目的作者和仓库名
+          source_branch: "main"           # 原项目的分支名
+          destination_branch: "main"      # 你 fork 仓库的分支名
+          github_token: ${{ secrets.GITHUB_TOKEN }}
