@@ -3,31 +3,33 @@
 \[Strange-Raw\].*\/ => [Strange-Raw]
 \[ANi\].*\/ => [ANi]
 
-
 #ANi
 (?<=ANi.*?)龍族II 悼亡者之瞳 => 龙族 (2022) S02
 (?<=ANi.*?)銀魂 3 年 Z 班銀八老師 => 3年Z組銀八先生
 (?<=ANi.*?)假面骑士 ZEZTZ => 假面骑士ZZZ
+(?<=ANi.*?)SPY×FAMILY 间谍家家酒 Season 3 <> 1080 >> EP-37
 
 #藤本树 17-26
 (藤本树.17-26)|(Fujimoto.Tatsuki.17-26)|(藤本树17-26.Tatsuki.Fujimoto.17-26) => Fujimoto Tatsuki{[tmdbid=299778;type=tv]}
 
 #拥有超常技能的异世界流浪美食家
-(?<=ANi.*?)拥有超常技能的异世界流浪美食家 S2 - (\d+) => 拥有超常技能的异世界流浪美食家.S01E\1
+(?<=ANi.*?)拥有超常技能的异世界流浪美食家 S2 - (\d+) => 拥有超常技能的异世界流浪美食家.S02E\1 && S02 <> 1080 >> EP-12
 
-#我们不可能成为恋人！绝对不行。（※似乎可行？）【ADWeb】
+#我们不可能成为恋人！绝对不行。（※似乎可行？）
 Watashi.ga.Koibito.ni.Nareru.Wake.Naijan.Murimuri.Muri.ja.Nakatta(?=.*ADWeb) => 我们不可能成为恋人！绝对不行{[tmdbid=277513;type=tv]}
 
-# 更衣人偶坠入爱河 第二季【ADWeb】
-Sono.Bisque.Doll.wa.Koi.wo.Suru.S02E(?=.*ADWeb) => 更衣人偶坠入爱河{[tmdbid=123249;type=tv]}S01E && S01E <> 2025 >> EP+12
-My.Dress-Up.Darling.S02(E\d+)(?=.*FROGWeb) => My.Dress-Up.Darling.{[tmdbid=123249;type=tv;s=1]}.S01\1 && S01E <> 2025 >> EP+12
+# 更衣人偶坠入爱河 第二季
+Sono.Bisque.Doll.wa.Koi.wo.Suru.S02E(?=.*ADWeb) => 更衣人偶坠入爱河.S02E{[tmdbid=123249;type=tv]}
+My.Dress-Up.Darling.S02E(?=.*FROGWeb) => 更衣人偶坠入爱河.S02E{[tmdbid=123249;type=tv]}
 
 #拔作岛
 Is.the.island.Utopia.or.Dystopia(?=.*ADWeb) => 拔作岛
 
-#怪兽8号
-Kaijuu.8.gou.S02(?=.*ADWeb) => Kaijuu.8.gou.S01
-(?<=Kaijuu.8.gou.S01.*?)2025 => 2024
+#怪兽8号第二季
+Kaijuu.8.gou.S02E(1[3-9]|2[0-9])(?=.*ADWeb) => Kaijuu.8.gou.S02E\1 && S02 <> 2025 >> EP-12
+Kaiju.No.+8.S01E(1[3-9]|2[0-9])(?=.*FROGWeb) => Kaijuu.8.gou.S02E\1 && S02 <> 2025 >> EP-12
+Kaijuu.8.gou.S01E(1[3-9]|2[0-9])(?=.*Nest@ADWeb) => Kaijuu.8.gou.S02E\1 && S02 <> 2025 >> EP-12
+(?<=ANi.*?)怪兽 8 号 第二季 - (\d+) => 怪兽8号.S02E\1 && S02 <> 1080 >> EP-12
 
 #海贼王s22
 One.Piece.S01E(1[1-9][0-9][0-9]|109[0-9]|108[6-9])(?=.*ADWeb) => 海贼王 S22E\1
@@ -37,8 +39,8 @@ One.Piece.S01E(1[1-9][0-9][0-9]|109[0-9]|108[6-9])(?=.*ADWeb) => 海贼王 S22E\
 Seishun.Buta.Yarou.wa.Santa.Claus.no.Yume.wo.Minai.S01E(\d+)(?=.*ADWeb) => 青春猪头少年不会梦到兔女郎学姐.S02E\1
 
 #转生为第七王子，随心所欲的魔法学习之路 第二季
-Tensei.Shitara.Dai.Nana.Ouji.Dattanode.Kimamani.Majutsu.wo.Kiwamemasu.S02E(1[3-9]|2[0-9])(?=.*ADWeb) => 转生为第七王子，随心所欲的魔法学习之路.S01
-(?<=ANi.*?) 转生为第七王子，随心所欲的魔法学习之路 第二季 - (1[3-9]|2[0-9]) => 转生为第七王子，随心所欲的魔法学习之路.S01E\1
+Tensei.Shitara.Dai.Nana.Ouji.Dattanode.Kimamani.Majutsu.wo.Kiwamemasu.S02E(1[3-9]|2[0-9])(?=.*ADWeb) => 转生为第七王子，随心所欲的魔法学习之路.S02E\1 && S02 <> 2025 >> EP-12
+(?<=ANi.*?) 转生为第七王子，随心所欲的魔法学习之路 第二季 - (1[3-9]|2[0-9]) [1080P][Baha][WEB-DL][AAC AVC][CHT][MP4] => 转生为第七王子，随心所欲的魔法学习之路.S02E\1 && S02 <> 1080P >> EP-12
 
 #与游戏中心的少女异文化交流的故事
 游乐场少女的异文化交流 => 与游戏中心的少女异文化交流的故事
@@ -49,9 +51,8 @@ Tensei.Shitara.Dai.Nana.Ouji.Dattanode.Kimamani.Majutsu.wo.Kiwamemasu.S02E(1[3-9
 #被驱逐开勇者派对的白魔导师，被S级冒险者捡到 ～这个白魔导师超规格～
 Yuusha.Party.wo.Tsuihou.Sareta.Shiro.Madoushi.S.Rank.Boukensha.ni.Hirowareru.Kono.Shiro.Madoushi.ga.Kikakugaisugiru.S01 => 被驱逐开勇者派对的白魔导师，被S级冒险者捡到 ～这个白魔导师超规格～ {[tmdbid=284771;type=tv;]}
 
-#噗妮露是可爱史莱姆 第二季
-Puniru.wa.Kawaii.Slime.S02E(?=.*ADWeb) => Puniru.wa.Kawaii.Slime.S01E && S01E <> 2025 >> EP+12
-(?<=ANi.*?) 噗妮露是可爱史莱姆 第二季 - (1[3-9]|2[0-9]) => 噗妮露是可爱史莱姆 S01E\1
+#噗妮露是可爱史莱姆s02
+(?<=ANi.*?) 噗妮露是可爱史莱姆 第二季 - (1[3-9]|2[0-9]) => 噗妮露是可爱史莱姆 S02E\1 && S02 <> 1080P >> EP-12
 
 #定孕成婚
 定孕成婚 / Deki Chau Made Kon => 定孕成婚
@@ -60,16 +61,19 @@ Puniru.wa.Kawaii.Slime.S02E(?=.*ADWeb) => Puniru.wa.Kawaii.Slime.S01E && S01E <>
 Seishun.Buta.Yarou.wa.Santa.Claus.no.Yume.wo.Minai.S01 => 青春猪头少年不会梦到兔女郎学姐 S02
 
 #租借女友第四季
-Kanojo.Okarishimasu.S04E(?=.*ADWeb) => Kanojo.Okarishimasu.{[tmdbid=96316;type=tv;s=1]}.S01E && S01E <> 2025 >> EP+36
+Rent-a-Girlfriend.S01E(3[7-9]|4[0-9])(?=.*FROGWeb) => Rent-a-Girlfriend.S04E\1 && S04 <> 2020 >> EP-36
+Kanojo.Okarishimasu => 租借女友{[tmdbid=96316;type=tv]} 
 
-#胆大党第二季偏移至第一季
-Dan.Da.Dan.S02E(1[3-9]|2[0-9])(?=.*MWeb) => 胆大党 S01
+#胆大党第二季
+Dandadan.S01E(1[3-9]|2[0-9])(?=.*ADWeb) => Dandadan.S02E\1 && S02 <> 2024 >> EP-12
+Dan.Da.Dan.S02E(1[3-9]|2[0-9])(?=.*MWeb) => 胆大党 S02E\1 && S02 <> 1080p >> EP-12
+(?<=ANi.*?)胆大党 第二季 - (\d+) => 胆大党.S02E\1 && S02 <> 1080 >> EP-12
+(?<=ANi.*?)膽大黨 第二季 - (\d+) => 胆大党.S02E\1 && S02 <> 1080 >> EP-12
 
 #宝可梦 地平线(枫叶字幕组)
 宝可梦 地平线 太乐巴戈斯的光辉 => 宝可梦 地平线(2023)
 宝可梦 地平线 烈空坐飞升 => 宝可梦 地平线(2023)
 宝可梦 地平线 超级电压 => 宝可梦 地平线(2023)
-宝可梦 地平线 再度飞升 => 宝可梦 地平线(2023)
 (.+)\[宠物小精灵(.+?地平线)|(.+)\[寵物小精靈(.+?地平線) => \1{[tmdbid=220150]}\2
 
 #莉可丽丝：友谊是时间的窃贼 （需使用剧集组订阅，并手动设置起始集数为1）
