@@ -19,5 +19,6 @@ DAN.DA.DAN.2025.S02 => DAN.DA.DAN.2025.S01 && S01 <> 1080p >> EP+12
 
 # 葬送的芙莉莲 第二季
 # 匹配测试：Frieren.Beyond.Journeys.End.S02E01.Shall.We.Go.Then.1080p.CR.WEB-DL.DDP2.0.H.264-Kitsune.mkv
-Sousou.no.Frieren => Frieren.Beyond.Journeys.End
+# [葬送的芙莉莲 第二季].Sousou.no.Frieren.2026.S02E01.1080p.CR.WEB-DL.H264.AAC-UBWEB.mkv
+Sousou.no.Frieren.2026 => Frieren.Beyond.Journeys.End
 Frieren.Beyond.Journeys.End.S02 =>  Frieren.Beyond.Journeys.End.S01 && Frieren.Beyond.Journeys.End.S01E <> 1080p >> EP+28
