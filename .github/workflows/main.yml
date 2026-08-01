@@ -1,0 +1,25 @@
+name: Sync Upstream
+
+on:
+  schedule:
+    - cron: "0 12 * * *"    # 每天
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Sync upstream
+        run: |
+          git remote add upstream https://github.com/Putarku/MoviePilot-Help.git || true
+          git fetch upstream
+          git checkout main
+          git reset --hard upstream/main
+          git push origin main --force
