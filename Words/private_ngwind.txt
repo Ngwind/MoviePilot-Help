@@ -24,4 +24,4 @@ Sousou.no.Frieren.2026 => Frieren.Beyond.Journeys.End
 Frieren.Beyond.Journeys.End.S02 =>  Frieren.Beyond.Journeys.End.S01 && Frieren.Beyond.Journeys.End.S01E <> 1080p >> EP+28
 
 # JOJO彪马野郎
-(STEEL\.BALL\.RUN\.JoJo\.s\.Bizarre\.Adventure)\.S02(E\d{2})\.2026 => \g<1>.S06\g<2>
+(STEEL[ .]BALL[ .]RUN[ .]JoJo[ .']?s[ .]Bizarre[ .]Adventure)([ .])S02(E\d{2}(?:-E?\d{2})?)[ .]2026 => \g<1>\g<2>S06\g<3>
